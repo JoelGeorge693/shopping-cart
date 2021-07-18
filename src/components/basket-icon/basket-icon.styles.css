@@ -1,0 +1,12 @@
+.shopping-icon {
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+    position: relative;
+  }
+  .item-count {
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    bottom: 12px;
+  }

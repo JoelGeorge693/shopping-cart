@@ -1,0 +1,9 @@
+.list{
+    display: flex;
+    cursor: pointer;
+    position:relative;
+}
+
+span{
+    margin : 0 20px
+}

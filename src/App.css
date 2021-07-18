@@ -1,38 +1,74 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-content: center; }
+  .App .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px; }
+  .App .App-header {
+    background-color: rgb(172, 162, 162);
+    height: 186px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .App .App-title {
+    font-size: 1.5em; }
+  .App .App-intro {
+    font-size: large; }
 
-.App-link {
-  color: #61dafb;
-}
+nav {
+  border: 1px solid red;
+  width: 50%;
+  align-self: center;
+  margin: 30px;
+  background-color: pink;
+  padding: 20px;
+  border-radius: 5px; }
+  nav form:first-child {
+    width: 50%; }
+    nav form:first-child input[type="text"] {
+      border: 0px;
+      padding: 10px;
+      width: 100%; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  main div {
+    display: flex;
+    flex-direction: column;
+    width: 30%; }
+  main header {
+    display: flex;
+    justify-content: space-between; }
+    main header .clearBasket {
+      color: red;
+      opacity: .3; }
+    main header .clearBasket:hover {
+      opacity: 1; }
+
+ul {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  grid-gap:10px; }
+  ul li {
+    margin: 7px 0px;
+    padding: 20px; }
+  ul li:nth-child(odd) {
+    background: #f9f9f9; }
+  ul li:nth-child(even) {
+    background: #efefef; }
+
+  h3{
+    padding-left: 50px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
